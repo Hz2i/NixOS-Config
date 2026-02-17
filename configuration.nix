@@ -165,13 +165,13 @@ in
 
 
   #Virtualisation:
-#   virtualisation.docker = {
-#     enable = true;
-#     rootless = {
-#       enable = false; # needed for winboat
-#       setSocketVariable = true;
-#     };
-#   };
+  virtualisation.docker = {
+    enable = true;
+    rootless = {
+      enable = false; # needed for winboat
+      setSocketVariable = true;
+    };
+  };
 
 
   #Setup Flatpak:
@@ -274,9 +274,9 @@ in
     eduvpn-client
 
     #Virtualization/WinBoat:
-#     winboat
-#     freerdp
-#     docker-compose
+    winboat
+    freerdp
+    docker-compose
     ];
 
   home-manager.backupFileExtension = "hm_backup";
