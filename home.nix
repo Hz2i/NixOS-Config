@@ -16,6 +16,7 @@
     thunderbird
     discord
     whatsapp-electron
+    qtox
 
     #Media (Entertainment):
     spotify
