@@ -44,7 +44,7 @@ in
   };
 
   # Use latest kernel.
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelPackages = pkgs.linuxPackages_6_18;
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -163,17 +163,6 @@ in
   # };
 
 
-
-  #Virtualisation:
-#   virtualisation.docker = {
-#     enable = true;
-#     rootless = {
-#       enable = false; # needed for winboat
-#       setSocketVariable = true;
-#     };
-#   };
-
-
   #Setup Flatpak:
   services.flatpak.enable = true;
 
@@ -272,11 +261,6 @@ in
     #Network:
     openvpn
     eduvpn-client
-
-    #Virtualization/WinBoat:
-#     winboat
-#     freerdp
-#     docker-compose
     ];
 
   home-manager.backupFileExtension = "hm_backup";
