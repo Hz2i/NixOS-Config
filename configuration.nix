@@ -44,7 +44,7 @@ in
   };
 
   # Use latest kernel.
-  boot.kernelPackages = pkgs.linuxPackages_6_18;
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -210,6 +210,8 @@ in
         gnum4
         flex
         bison
+        meson
+        ninja
       ];
       profile = ''export FHS=1'';
       runScript = "fish";
@@ -234,6 +236,7 @@ in
     gmp
     mpfr
     cacert
+    nix-init
 
     #Terminal, Files, and extensions:
     lf
