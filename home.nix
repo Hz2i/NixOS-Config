@@ -30,14 +30,7 @@
     qbittorrent
     masterpdfeditor4
     orca-slicer
-    kicad
     remmina
-    mokutil
-    cabextract
-    samba
-    spacenavd
-    gettext
-    virtualgl
     wine
 
     #Terminal:
@@ -70,11 +63,18 @@
       };
     };
 
+#   programs.git = {
+#     enable = true;
+#     settings.user = {
+#       email = "stefan.amarfii52@gmail.com";
+#       name = "Hz2i";
+#     };
+#   };
   programs.git = {
     enable = true;
     settings.user = {
-      email = "stefan.amarfii52@gmail.com";
-      name = "Hz2i";
+      email = "amarfii@student.tudelft.nl";
+      name = "samarfii";
     };
   };
 
